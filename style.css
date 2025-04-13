@@ -1,44 +1,43 @@
 body {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
     align-items: center;
-}
-
-.bola-b1 {
-
+    min-height: 100vh;
+    
+    overflow: hidden;
+  }
+  
+  .heart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .bola-b1,
+  .bola-b2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
     border-radius: 50%;
+    top: 0;
+  }
+  
+  .bola-b1 {
+    right: 75px;
+  }
+  
+  .bola-b2 {
+    left: 60px;
+  }
+  
+  .quadrado {
     position: absolute;
-    left: 300px;
-    width: 105px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
     background-color: red;
-    z-index: 2;
-}
-
-.bola-b2 {
-    border-radius: 50%;
-    position: absolute;
-    right: 350px;
-    width: 105px;
-    height: 105px;
-    background-color: red;
-    z-index: 3;
-
-
-
-
-}
-
-.quadrado {
-    position: absolute;
-    top: 300px;
-    left: 255px;
-    width: 105px;
-    height: 105px;
-    background-color: red;
-    z-index: 1;
+    top: 40px;
+    left: 18px;
     transform: rotate(45deg);
-
-
-}
+  }
+  
